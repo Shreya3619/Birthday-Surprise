@@ -109,11 +109,11 @@ balloons.forEach((balloon, index) => {
 // PHOTO SLIDER
 // Add more photos by changing this array. Put the files in assets/.
 const photos = [
-  {src:"assets/photo1.jpeg", caption:"ye dosti ham nahi todengee♡"},
-  {src:"assets/photo2.jpeg", caption:"proof that we have no normal photos "},
-  {src:"assets/photo3.jpeg", caption:"this one still makes me smile"},
-  {src:"assets/photo4.jpeg", caption:"Jaanuuuu"},
-  {src:"assets/photo5.jpeg", caption:"Sundarrr Ladkiiii✨"}
+  {src:"photo1.jpeg", caption:"ye dosti ham nahi todengee♡"},
+  {src:"photo2.jpeg", caption:"proof that we have no normal photos "},
+  {src:"photo3.jpeg", caption:"this one still makes me smile"},
+  {src:"photo4.jpeg", caption:"Jaanuuuu"},
+  {src:"photo5.jpeg", caption:"Sundarrr Ladkiiii✨"}
 ];
 let photoIndex = 0;
 const photo = document.getElementById("memoryPhoto");
