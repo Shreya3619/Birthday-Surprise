@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#1c1024" />
+  <title>For Kavya ♡</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background music: put your MP3 in assets/music.mp3 -->
+  <audio id="bgMusic" src="assets/music.mp3" loop preload="auto"></audio>
+
+  <button class="music-btn" id="musicBtn" aria-label="Toggle music">♫</button>
+
+  <main id="app">
+
+    <!-- 1. BOW & ARROW -->
+    <section class="screen active" id="screen1">
+      <p class="eyebrow">a little something, for you</p>
+
+      <div class="heart-target" id="heartTarget">♥</div>
+
+      <div class="bow-area">
+        <div class="bow" id="bow">
+          <div class="bow-curve"></div>
+          <div class="bow-grip"></div>
+          <div class="string"></div>
+          <div class="arrow" id="arrow">
+            <span class="arrow-head">➤</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="instruction">PULL &amp; RELEASE</p>
+      <p class="hint">Drag the arrow backward, then let go.</p>
+
+      <div class="popup" id="heartPopup">
+        <div class="popup-card">
+          <span class="tiny">IT'S OFFICIALLY YOUR DAY ✨</span>
+          <h1>Happy 18th Birthday,<br>Kavya! ♡</h1>
+          <p>Okay, now let's make this birthday a little more special.</p>
+          <button class="next-btn" data-next="2">Let's go →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. BIRTHDAY INTRO -->
+    <section class="screen" id="screen2">
+      <div class="cake">🎂</div>
+      <p class="eyebrow">make a wish...</p>
+      <h1 class="big-title">Happy<br>18th Birthday</h1>
+      <p class="subtext">to someone worth celebrating ♡</p>
+      <button class="next-btn" data-next="3">Continue ✨</button>
+    </section>
+
+    <!-- 3. FIVE REASONS / BALLOONS -->
+    <section class="screen" id="screen3">
+      <p class="eyebrow">a few reasons...</p>
+      <h2>Pop the balloons 🎈</h2>
+      <p class="subtext">Each balloon holds a reason you're loved.<br>Pop them all.</p>
+
+      <div class="balloon-field" id="balloonField">
+        <button class="balloon pink" data-message="You were there in my best and worst days. #CONSTANT">🎈</button>
+        <button class="balloon purple" data-message="You make ordinary days feel special.">🎈</button>
+        <button class="balloon teal" data-message="The world is kinder with you in it.">🎈</button>
+        <button class="balloon orange" data-message="You believed in me when I didn't.">🎈</button>
+        <button class="balloon yellow" data-message="You remember the little things I forget.">🎈</button>
+	<button style="background-color: black" >AND A MILLION MORE REASONSSS...<3</button>
+      </div>
+
+      <div class="reason-box" id="reasonBox">
+        <span class="reason-label" id="reasonNumber">REASON</span>
+        <p id="reasonText"></p>
+      </div>
+
+      <button class="next-btn hidden" id="balloonNext" data-next="4">Keep going ♡</button>
+    </section>
+
+    <!-- 4. PHOTO MEMORIES -->
+    <section class="screen" id="screen4">
+      <p class="eyebrow">a walk down memory lane</p>
+      <h2>Our little archive 📸</h2>
+      <p class="subtext">Swipe through the memories.</p>
+
+      <div class="slider-wrap">
+        <button class="slide-arrow left" id="prevPhoto">‹</button>
+        <div class="polaroid">
+          <img id="memoryPhoto" src="assets/photo1.jpeg" alt="A memory" />
+          <div class="caption" id="photoCaption">one of my favourite memories ♡</div>
+        </div>
+        <button class="slide-arrow right" id="nextPhoto">›</button>
+      </div>
+
+      <div class="dots" id="photoDots"></div>
+      <button class="next-btn" data-next="5">One last thing… ✉</button>
+    </section>
+
+    <!-- 5. ENVELOPE -->
+    <section class="screen" id="screen5">
+      <p class="eyebrow">one last thing, Kavya...</p>
+      <p class="subtext">I wrote you a letter.</p>
+
+      <button class="envelope" id="envelope" aria-label="Open your birthday letter">
+        <div class="envelope-flap"></div>
+        <div class="seal">K</div>
+      </button>
+
+      <p class="instruction">Tap to open your letter</p>
+
+      <div class="letter-overlay" id="letterOverlay">
+        <div class="letter">
+          <button class="close-letter" id="closeLetter">×</button>
+          <p class="letter-small">DEAR KAVYA,</p>
+          <h2>18 looks good on you. ♡</h2>
+          <p>
+            Somewhere between all the random conversations, stupid jokes,
+            unforgettable days and the moments when one of us just needed the other,
+            you became one of those people I never want to lose.
+          </p>
+          <p>
+            Thank you for being constant, for making ordinary days memorable,
+            and for being you. I hope this year gives you reasons to laugh until
+            your stomach hurts, memories you'll keep forever, and everything you've
+            been quietly wishing for.
+          </p>
+          <p class="signature">Always cheering for you,<br><b>Shreya ♡</b></p>
+          <button class="next-btn" data-next="6">Continue →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. FINAL -->
+    <section class="screen final-screen" id="screen6">
+      <div class="confetti">🎉 🎀 🐱 🎂 🐾 💗 ✨</div>
+      <p class="eyebrow">and finally...</p>
+      <h1 class="final-title">HAPPY 18TH,<br>KAVYA! 🐱💗</h1>
+      <p class="final-message">
+        Here's to 18, to us, to all the memories we've already made,
+        and to the ridiculous number of memories still waiting for us.
+      </p>
+      <div class="cat-row">😼 🐱 😽 🐈‍⬛ 🐾</div>
+      <p class="small-final">You are officially allowed to be an adult now.<br>
+        Unfortunately, the chaos remains. 😂</p>
+      <button class="replay-btn" id="replayBtn">Replay from the beginning ↻</button>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
